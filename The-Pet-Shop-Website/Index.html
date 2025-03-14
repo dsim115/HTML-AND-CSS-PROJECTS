@@ -1,98 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  		<title>The Pet Shop</title>
-		<meta charset=“utf-8”>
-		<meta name="description" content="Pet Shop">
-  		<meta name="keywords" content="HTML">
-  		<meta name="author" content="David Simental">
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<!--NAVBAR-->
-		<nav>
-			<ul>
-				<li><a href="Index.html">HOME</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-			</ul>
-			<ul>
-				<a href="#cat"><li>Cats & Kittens</li></a>
-				<a href="#dog"><li>Dogs & Puppies</li></a>
-				<a href="#rabbit"><li>Rabbits</li></a>
-				<a href="#rat"><li>Rats</li></a>
-				<a href="#fish"><li>Fish</li></a>
-				<a href="#reptiles"><li>Reptiles</li></a>
-				<a href="#video"><li>Videos</li></a>
-			</ul>
-		</nav>
-		  <!--HEADER-->
-		<header>
-			<div> 
-				<h1>Welcome to the Pet Shop!</h1>
-			</div>
-		</header>
-		<!--PET IMAGES-->
-		<section>
-			<div>
+
+<head>
+	<title>The Pet Shop</title>
+	<meta charset=“utf-8”>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav class="nav-bar">
+		<ul id="nav-border">
+			<li><a href="Index.html">HOME</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		<ul>
+			<a href="#cat">
+				<li>Cats & Kittens</li>
+			</a>
+			<a href="#dog">
+				<li>Dogs & Puppies</li>
+			</a>
+			<a href="#rabbit">
+				<li>Rabbits</li>
+			</a>
+			<a href="#rat">
+				<li>Rats</li>
+			</a>
+			<a href="#fish">
+				<li>Fish</li>
+			</a>
+			<a href="#reptiles">
+				<li>Reptiles</li>
+			</a>
+			<a href="#video">
+				<li>Videos</li>
+			</a>
+		</ul>
+	</nav>
+	<!--HEADER-->
+	<header>
+		<div>
+			<h1 class=" animate-text">Welcome to the Pet Shop!</h1>
+		</div>
+	</header>
+	<!--PET IMAGES-->
+	<section>
+		<div class="container">
 			<h2>Choose a Pet!</h2>
-				<div>
-					<!--CAT IMAGE-->
-					<div id="cat">
+			<div>
+				<!--CAT IMAGE-->
+				<div id="cat" class="column">
+					<div class="image-container">
 						<h3>Cats and Kittens</h3>
 						<img src="images/cat.jpeg" alt="Picture of kittens">
+						<div class="overlay"></div>
 					</div>
-					<!--DOG IMAGE-->
-					<div id="dog">
+				</div>
+				<!--DOG IMAGE-->
+				<div id="dog" class="column">
+					<div class="image-container">
 						<h3>Dogs and Puppies</h3>
 						<img src="images/Dog.jpg" alt="Picture of dogs">
+						<div class="overlay"></div>
 					</div>
-					<!--RABBIT IMAGE-->
-					<div id="rabbit">
+				</div>
+				<!--RABBIT IMAGE-->
+				<div id="rabbit" class="column">
+					<div class="image-container">
 						<h3>Rabbits</h3>
-						<img src="images/rabbit.webp" alt="Picture of rabbits">
+						<img src="images/rabbit.jpeg" alt="Picture of rabbits">
+						<div class="overlay"></div>
 					</div>
-					<!--RAT IMAGE-->
-					<div id="rat">
+				</div>
+				<!--RAT IMAGE-->
+				<div id="rat" class="column">
+					<div class="image-container">
 						<h3>Rats</h3>
 						<img src="images/rat.jpeg" alt="Picture of rats">
+						<div class="overlay"></div>
 					</div>
-					<!--FISH IMAGE-->
-					<div id="fish">
+				</div>
+				<!--FISH IMAGE-->
+				<div id="fish" class="column">
+					<div class="image-container">
 						<h3>Fish</h3>
 						<img src="images/fish.png" alt="Picture of fish">
+						<div class="overlay"></div>
 					</div>
-					<!--BEARDED DRAGON IMAGE-->
-					<div id="reptiles">
+				</div>
+				<!--BEARDED DRAGON IMAGE-->
+				<div id="reptiles" class="column">
+					<div class="image-container">
 						<h3>Bearded Dragon</h3>
 						<img src="images/Bearded Dragon.jpg" alt="Picture of bearded dragon">
+						<div class="overlay"></div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!--VIDEOS-->
-		<section>
-			<!--DOG VIDEO-->
-			<div id="video">
-				<h3>Videos</h3>
-				<iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4">
-			</div>
-		  </section>
-		<!--FOOTER-->
-		<footer>
-			<table> 
-				<tr>  
-					<td>
-						<p>The Pet Shop! &copy;</p>
-					</td>
-					<td>
-						<p>123 Square Ave</p>
-						<p>Portland, OR 97204</p>
-					</td>
-					<td>
-						<p>503-234-3966</p>
-					</td>
-				</tr>
-			</table>
-		</footer>
-	</body>
+		</div>
+	</section>
+	<!--VIDEOS-->
+	<section>
+		<!--DOG VIDEO-->
+		<div id="video" class="container">
+			<h3>Videos</h3>
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
+		</div>
+	</section>
+	<!--FOOTER-->
+	<footer>
+		<table>
+			<tr>
+				<td>
+					<p>The Pet Shop! &copy;</p>
+				</td>
+				<td>
+					<p>123 Square Ave</p>
+					<p>Portland, OR 97204</p>
+				</td>
+				<td>
+					<p>503-234-3966</p>
+				</td>
+			</tr>
+		</table>
+	</footer>
+</body>
+
 </html>
