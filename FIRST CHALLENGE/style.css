@@ -1,0 +1,193 @@
+/*IMAGES*/
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: lightblue;
+}
+
+/*Makes image black and white*/
+img{
+    filter: grayscale(100%);
+    border: 2px solid navy;
+    border-radius: 25px;
+}
+
+/*Makes image round edges*/
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*TABLES*/
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 25%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+tr:nth-child(odd){
+    background-color: #808b96;
+}
+
+/*NAVBAR*/
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .navbar a:focus{
+    background: #ddd;
+    color: black;
+  }
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+/* Columns side by side */
+
+.row {
+    width: 80%;             /* Set row width */
+    margin: 0 auto;         /* Center the row */
+    overflow: hidden;       /* Clearfix for floats */
+  }
+
+  .column {
+    float: left;
+    width: 50%;             /* Set column width */
+    height: 300px;          /* Set column height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width/height */
+    color: white;           /* Font/text color */
+  }
+
+  .left {
+    background-color: #4CAF50; /* Green background for contrast */
+  }
+
+  .right {
+    background-color: #2196F3; /* Blue background for contrast */
+  }
+
+
+/*HOVER*/
+  p:hover{
+    color: red;
+  }
+
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .video-container {
+    position: relative; /* Make the container a positioning context */
+    width: 100%; /* Adjust as needed */
+    max-width: 800px; /* Optional: Limit the container width */
+    margin: 0 auto; /* Center the container */
+}
+
+.video-container video {
+    width: 100%; /* Make the video responsive */
+    height: auto;
+    display: block;
+}
+
+.video-container .text-overlay {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add contrast for readability */
+    z-index: 10; /* Ensure it appears above the video */
+    pointer-events: none; /* Prevent interaction with the text */
+}
