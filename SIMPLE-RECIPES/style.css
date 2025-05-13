@@ -1,4 +1,4 @@
-/*Import font form google fonts*/
+/*Import font from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
@@ -12,7 +12,7 @@ html {
 /*NAVBAR*/
 .navbar {
     position: sticky;
-    /*Creates a sticky element that stays in the same spot in the browswer screen*/
+    /*Creates a sticky element that stays in the same spot in the browser screen*/
     top: 0;
     /*Sets the top position of the sticky element*/
     z-index: 9;
@@ -21,13 +21,13 @@ html {
 
 ul {
     display: flex;
-    /*Creates a flex container which will expand or shirng elements
-    to fill the space availble to them and plae the elements in a row*/
+    /*Creates a flex container which will expand or shrink elements
+    to fill the space available to them and place the elements in a row*/
     list-style-type: none;
     /*Removes the default bullet points from the list*/
     margin: -8px -8px, 0px -8px;
     /*The margin order is top, right, bottom,
-    left. The negative margins will stretch the background beyond the edge of the browswer
+    left. The negative margins will stretch the background beyond the edge of the browser
     screen*/
     background-color: rgb(1, 128, 106);
     border-bottom: 5px solid rgb(247, 177, 188);
@@ -36,7 +36,7 @@ ul {
 
 a {
     display: block;
-    /*Display anchor elemens vertically on a new line, this was added
+    /*Display anchor elements vertically on a new line, this was added
     to make the rollover menu work properly*/
     font-family: "Josefin Slab", serif;
     font-size: 25px;
@@ -100,13 +100,16 @@ a:hover {
 /*footer*/
 
 footer {
+    text-align: center; /* Centers the footer content */
+    padding: 20px; /* Adds spacing around the footer */
+    background-color: rgb(1, 128, 106);
+    color: rgb(247, 177, 188);
     align-items: center;
     /*Centers the footer content*/
     margin: 0px -8px -8px -8px;
     /*The margin order is top, right, bottom,
-    left. The negative margins will stretch the background beyond the edge of the browswer
+    left. The negative margins will stretch the background beyond the edge of the browser
     screen*/
-    background-color: rgb(1, 128, 106);
     border-top: 5px solid rgb(247, 177, 188);
     bottom: 0;
 }
@@ -164,8 +167,13 @@ h2 {
     text-decoration-color: rgb(247, 177, 188);
 }
 
+/* Update h3 headers (recipe names) to match the main header style */
 h3 {
-    font-size: 35px;
+    font-family: "Sacramento", cursive; /* Matches the main header font */
+    font-size: 50px; /* Adjusted font size for consistency */
+    color: rgb(0, 80, 67); /* Matches the main header color */
+    text-align: center; /* Centers the recipe names */
+    margin: 20px 0; /* Adds spacing above and below the headers */
 }
 
 h4 {
@@ -186,25 +194,24 @@ p {
 
 /*IMAGES*/
 
-/*Postitions elements to sit side by side on the screen*/
+/*Positions elements to sit side by side on the screen*/
 .column {
     float: left;
-    width: 48%;
+    width: 48%; /* Ensures two columns fit side by side */
     padding: 10px;
-
+    box-sizing: border-box; /* Includes padding in the width calculation */
 }
 
 /*Styling for screens 1200px or smaller*/
 @media screen and (max-width: 1200px) {
     .column {
-        width: 100%;
+        width: 100%; /* Stacks columns vertically */
         padding: 0px;
-        margin-left: -15px;
-        /*Centers each column on the screen*/
+        margin-left: 0; /* Removes unnecessary left margin */
     }
 }
 
-/*Specifically styles the first 7 img tag alements caintained in the .column class*/
+/*Specifically styles the first 7 img tag elements contained in the .column class*/
 .column img:nth-child(-n+7) {
     width: 500px;
     height: 350px;
@@ -222,7 +229,7 @@ p {
 
 }
 
-/*Stylying for mobile size screens*/
+/*Styling for mobile size screens*/
 @media screen and (max-width: 600) {
     .column img:nth-child(-n + 7) {
         width: 350px;
@@ -252,7 +259,15 @@ p {
     }
 }
 
-/*Featered Recipe*/
+/*Featured Recipe*/
+/*Ensure the #featured section is properly centered*/
+#featured {
+    text-align: center; /* Centers all child elements */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds spacing around the section */
+    width: 100%; /* Ensures the section spans the full width */
+}
+
 /*Styles the featured recipe h3 tag*/
 #featured-header{
     font-family: 'Sacramento', cursive; 
@@ -260,34 +275,31 @@ p {
     color: rgb(0,80,67);
 }
 
-#featured-main-text{
-    text-align: justify;
-    padding-top: 20px;
-    margin-left: 40px;
-
+/* Ensure the heading inside the featured section is centered */
+#featured h2 {
+    font-size: 60px; /* Adjust font size for consistency */
+    text-align: center; /* Centers the heading */
+    margin: 0 auto 30px; /* Adds 30px spacing below the heading */
+    color: rgb(0, 80, 67); /* Matches the color scheme */
 }
 
-/*Sets margin left to 0 because it is not needed on a small screen and center the text*/
-@media screen and (max-width: 1200px){
-    #featured-main-text{
-        margin-left:0;
-    }
+/*Ensure the text in the featured recipe is centered*/
+#featured-main-text {
+    text-align: center; /* Centers the text */
+    margin: 0 auto; /* Centers the text block horizontally */
+    max-width: 600px; /* Restricts the width for better readability */
+    padding: 20px; /* Adds spacing around the text */
 }
 
-/*Specifically styles the img tag nested within the #featured div in the Featured Recipe
-section*/
-@media screen and (min-width: 1600px){
-    #featured img{
-        width: 700px;
-        height: auto; /*Automatically calculates the image height based on the width*/
-        margin-left: -100px;
-        margin-top: -20px; /*Margin left and top will override margin styling from
-        the .recipe contaner class selector*/
-    }
-
+/*Ensure the image in the featured recipe is centered*/
+#featured img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image scales properly */
+    height: auto; /* Maintains the aspect ratio */
 }
 
-/*Adjusts the position of the featured image to be centered in its div when teh width is 1599px or less */
+/*Adjusts the position of the featured image to be centered in its div when the width is 1599px or less */
 @media screen and (max-width:1599px){
     #featured img{
         margin-left: 0px;
@@ -304,14 +316,14 @@ section*/
     }
 }
 
-#featured-button{
-    display: block; /*Positions the recipe button on its own line from the other elements
-    within the div*/
-    margin: 60px auto 0px;
+/*Ensure the button in the featured recipe is centered*/
+#featured-button {
+    display: block; /* Positions the button on its own line */
+    margin: 20px auto; /* Centers the button horizontally */
     background-color: rgb(1, 128, 106);
     border-radius: 35px;
-    border: none; /*Removes default border set by the browser when the border-radious is ussed*/
-    font-family: "Josefin Slab", serif; 
+    border: none;
+    font-family: "Josefin Slab", serif;
     font-size: 30px;
     font-weight: bold;
     padding: 15px 25px;
@@ -319,14 +331,14 @@ section*/
     cursor: pointer;
 }
 
-/*sepcifically styles the hover effect of the reicipe button in the featured recipe section*/
+/*Specifically styles the hover effect of the recipe button in the featured recipe section*/
 #featured-button:hover{
     background-color: rgb(247,177,188);
 }
 
 /*IMAGE FLIP*/
 
-/*Posittioins the flip effect, defines transition time, and defines a 3d effect*/
+/*Positions the flip effect, defines transition time, and defines a 3d effect*/
 .flip{
     position: relative;
     width: 100%;
@@ -338,7 +350,7 @@ section*/
 }
 
 .flip:hover{
-    transform: rotateY(-180deg); /*Rotates and element from the right 
+    transform: rotateY(-180deg); /*Rotates an element from the right 
     to the left*/
 
 }
@@ -354,7 +366,7 @@ section*/
     background-color: rgb(149, 238,223);
     border: 2px solid white;
     transform: rotateY(180deg); /*Adds 180 degrees back from subtracted -180 degrees 
-    it moved to previously so the text can be red properley*/
+    it moved to previously so the text can be read properly*/
  }
 
 
@@ -388,23 +400,48 @@ section*/
  }
 
  /*CONTACT FORM CSS*/
- /*Sets up the content within the div tag containaing the ID contact to be centered o
+ /*Ensure proper alignment for the contact form*/
+ #contact {
+    text-align: center; /* Centers the content */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds spacing around the section */
+    width: 100%; /* Ensures the section spans the full width */
+ }
+
+ /*Sets up the content within the div tag containing the ID contact to be centered 
  on the webpage*/
- #contact{
-    display: block;
-    margin-bottom: 70px
+ form {
+    display: block; /* Ensures the form takes up its own block */
+    margin: 0 auto; /* Centers the form horizontally */
+    max-width: 600px; /* Restricts the width for better readability */
+    padding: 20px; /* Adds spacing inside the form */
  }
 
- form{
-    display: table; /*This will display the form in ta table format as rows and columns*/
-    padding: 15px;
-    margin-left: auto;
-    margin-right: auto; /*The browswer will automatically calculate margins to cener the 
-    form on the screen*/
-
+ /* Ensure the form inside the contact section is centered */
+ #contact form {
+    display: block; /* Ensures the form takes up its own block */
+    margin: 0 auto; /* Centers the form horizontally */
+    max-width: 600px; /* Restricts the width for better readability */
+    padding: 20px; /* Adds spacing inside the form */
  }
 
- /*THis will specifically target the inpu tags that are nested within the form tags*/
+ /* Ensure the contact form heading is consistent with other sections */
+ #contact h2 {
+    font-size: 60px; /* Adjust font size for consistency */
+    text-align: center; /* Centers the heading */
+    margin: 0 auto; /* Centers the heading horizontally */
+    color: rgb(0, 80, 67); /* Matches the color scheme */
+ }
+
+ /* Ensure the contact form subheading is centered */
+ #contact h3 {
+    font-size: 20px; /* Adjust font size for readability */
+    text-align: center; /* Centers the subheading */
+    margin: 10px auto; /* Adds spacing around the subheading */
+    color: rgb(0, 80, 67); /* Matches the color scheme */
+ }
+
+ /*This will specifically target the input tags that are nested within the form tags*/
  form input{
     font-family: "Courier New", Courier, monospace;
     font-size: 15px;
@@ -419,7 +456,7 @@ section*/
  form input:focus{
     border: 2px solid rgb(1, 128, 106);
     color: black;
-    outline: none; /*Removes default border added when the focus psuedo class is triggered*/
+    outline: none; /*Removes default border added when the focus pseudo class is triggered*/
     transition: 0.3s ease-out;
  }
 
@@ -467,4 +504,78 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background-color: rgb(247,177,188);
+}
+
+
+/*RECIPE MODAL*/
+.recipe-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.recipe-content{
+    position: relative;
+    background-color: rgba(255, 255, 255);
+    top: 15vh;
+    left: 27vw;
+    width: 45vw;
+    height: 70%;
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.close-btn{
+    color: rgb(1, 128, 106);
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    padding-right: 10px;
+}
+
+.modal-header{
+    padding-top: 20px;
+
+}
+
+.modal-body{
+    padding: 20px;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+
+}
+
+.rp-column-1{
+    width: 33%;
+}
+
+.rp-column-2{
+    width: 67%;
+}
+
+.recipe-list{
+    margin-left: -30px; 
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.recipe-directions{
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
 }
