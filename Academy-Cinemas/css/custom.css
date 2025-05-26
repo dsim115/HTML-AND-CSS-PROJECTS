@@ -315,5 +315,17 @@ the img type selector styling*/
 }
 
 
+.star-rating{
+    width: 80%;
+}
 
-/* 'a' element update to give it a hover effect.*/
+
+/*Toast*/
+
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}

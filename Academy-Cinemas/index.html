@@ -17,9 +17,7 @@
 
 <body>
     <!--BOOSTRAP JAVASCRIPT-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
@@ -63,7 +61,10 @@
             <!--BEN HUR-->
             <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
                 <div class="col-lg-5 mx-auto">
-                    <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben-Hur Movie Poster">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-img="images/four-and-half-stars.png" data-bs-title="Ben-Hur Movie Rating">
+                        <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben-Hur Movie Poster">
+                    </span>
                 </div>
                 <div class="card col-lg-5 mx-auto">
                     <div class="card-body">
@@ -103,6 +104,7 @@
             <div class="d-flex flex-row flex-wrap-reverse spacer" id="stood-still">
 
                 <div class="card col-lg-5 mx-auto">
+
                     <div class="card-body">
                         <h3 class="card-title">The Day the Earth Stood Still</h3>
                         <!--THE DAY THE EARTH STOOD STILL MOVIE DESCRIPTION-->
@@ -136,14 +138,23 @@
                     </div>
                 </div>
                 <div class="col-lg-5 mx-auto">
-                    <img src="images/earth-stood-still.jpg" class="img-fluid"
-                        alt="The Day the Earth Stood Still Movie Poster">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-img="images/four-stars.png" data-bs-title="The Day the Earth Stood Still Rating">
+                        <img src="images/earth-stood-still.jpg" class="img-fluid"
+                            alt="The Day the Earth Stood Still Movie Poster">
+                    </span>
+
+
                 </div>
             </div>
             <!--VERTIGO-->
             <div class="d-flex flex-row flex-wrap spacer" id="vertigo">
                 <div class="col-lg-5 mx-auto">
-                    <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo Movie Poster">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-img="images/four-and-half-stars.png" data-bs-title="Vertigo Rating">
+                        <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo Movie Poster">
+                    </span>
+
                 </div>
                 <div class="card col-lg-5 mx-auto">
                     <div class="card-body">
@@ -192,7 +203,7 @@
                     <div class="card text-center">
                         <h5 class="card-title">Please select a movie</h5>
                         <div class="card-body">
-                            <select class="form-select" aria-label="Movie title selection">
+                            <select id="movieSelect" class="form-select" aria-label="Movie title selection">
                                 <option selected>Select Movie</option>
                                 <option value="1">Ben-Hur</option>
                                 <option value="2">THe Day the Eart Stood Still</option>
@@ -206,7 +217,7 @@
                     <div class="card text-center">
                         <h5 class="card-title">Please select show time</h5>
                         <div class="card-body">
-                            <select class="form-select" aria-label="Show time selection">
+                            <select id="timeSelect" class="form-select" aria-label="Show time selection">
                                 <option selected>Select Time</option>
                                 <option value="1">10:00 AM</option>
                                 <option value="2">11:30 AM</option>
@@ -223,7 +234,7 @@
                     <div class="card text-center">
                         <h5 class="card-title">Please select number of tickets</h5>
                         <div class="card-body">
-                            <input type="number" id="quantitiy" value="1" step="1">
+                            <input type="number" id="quantity" value="1" step="1">
                         </div>
                     </div>
                 </div>
@@ -231,11 +242,21 @@
             <!--BUY TICKETS BUTTON-->
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <button type="sumbit" class="btn yellow-btn">Buy Tickets</button>
+                    <button type="sumbit" class="btn yellow-btn" onclick="buyTickets()">Buy Tickets</button>
                 </div>
             </div>
         </div>
     </section>
+    <!--BOOSTRAP TOAST-->
+    <div id="toastDisplay" class="custom-toast toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Ticket Information</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div id="toastBody" class="toast-body">
+            <!--Selected options will be displayed here-->
+        </div>
+    </div>
     <!--CONTACT FORM-->
     <section>
         <div class="container" id="contact">
@@ -281,7 +302,13 @@
 
         </footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
