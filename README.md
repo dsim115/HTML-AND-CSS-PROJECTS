@@ -1,16 +1,59 @@
 # HTML-AND-CSS-PROJECTS
-## Introduction:
-This is my repository for all the work and information I will work on during my HTML/CSS coursework.
- ### Projects:
- - The Pet Shop
- - Academy Cinemas
- - [Portfolio Website](https://dsim115.github.io/Website-Portfolio/)
 
-### The Pet Shop
-This website is one of my first complete pages, including HTML and CSS. It contains a navbar, images, a contact form, a video, and hover effects.
+## Introduction
+This repository contains web development projects completed during my HTML and CSS coursework. These projects focus on building structured, responsive, and visually styled websites using modern HTML and CSS techniques, along with Bootstrap for layout and components.
 
-### Academy Cinemas
-This page is an example home page for a Movie theater that is styled using Bootstrap 4. It contains many bootstrap components including but not limited to a navbar, jumbotron, form, cards, and dropdowns.
 
-### Portfolio
-This is my most complete website within this course. It is an overview of my software development career up to this point. It includes a Nav bar, animation, hyperlinks, and a functioning contact form.
+
+## Projects
+
+
+### The Pet Shop Website
+One of my earliest complete website projects, built to practice foundational HTML and CSS skills.
+
+Features:
+- Multi-section page layout
+- Navigation bar
+- Embedded images and video
+- Contact form layout
+- Hover effects and basic styling
+
+Technologies:
+- HTML5
+- CSS3
+
+
+
+### Academy Cinemas Website
+A movie theater homepage designed using Bootstrap to demonstrate responsive layout and component usage.
+
+Features:
+- Responsive design using Bootstrap
+- Navigation bar with dropdown menus
+- Movie listings and showtime-style content
+- Forms and cards for structured content
+- Demonstrates use of Bootstrap components and layout utilities
+
+Technologies:
+- HTML5
+- CSS3
+- Bootstrap
+
+
+
+## Purpose
+This repository serves as a portfolio of my front-end development progress, highlighting my ability to:
+- Structure semantic HTML documents
+- Apply CSS for layout, styling, and responsiveness
+- Use Bootstrap components effectively
+- Build complete, user-friendly web pages
+
+I will continue to improve and expand these projects as my skills develop.
+
+
+
+## Technologies Used
+- HTML5
+- CSS3
+- Bootstrap
+- Git and GitHub
