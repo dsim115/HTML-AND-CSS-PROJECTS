@@ -1,7 +1,7 @@
 # HTML-AND-CSS-PROJECTS
 
 ## Introduction
-This repository contains web development projects completed during my HTML and CSS coursework. These projects focus on building structured, responsive, and visually styled websites using modern HTML and CSS techniques, along with Bootstrap for layout and components.
+This repository contains web development projects completed during my HTML and CSS coursework. These projects focus on building structured, responsive, and visually engaging websites using semantic HTML, custom CSS, and Bootstrap where appropriate.
 
 
 
@@ -28,11 +28,11 @@ Technologies:
 A movie theater homepage designed using Bootstrap to demonstrate responsive layout and component usage.
 
 Features:
-- Responsive design using Bootstrap
+- Responsive layout using Bootstrap
 - Navigation bar with dropdown menus
 - Movie listings and showtime-style content
-- Forms and cards for structured content
-- Demonstrates use of Bootstrap components and layout utilities
+- Cards, forms, and layout utilities
+- Demonstrates Bootstrap components and grid system
 
 Technologies:
 - HTML5
@@ -41,14 +41,31 @@ Technologies:
 
 
 
+### Simple Recipes Website
+A recipe-focused website designed to showcase multiple recipes with interactive navigation and visual effects.
+
+Features:
+- Custom navigation bar with dropdown menu
+- Featured recipe section
+- Recipe cards with flip animations
+- Modal-style recipe detail views
+- Multi-section layout including About and Contact
+- Emphasis on layout, styling, and user interaction using CSS
+
+Technologies:
+- HTML5
+- CSS3
+
+
+
 ## Purpose
 This repository serves as a portfolio of my front-end development progress, highlighting my ability to:
 - Structure semantic HTML documents
-- Apply CSS for layout, styling, and responsiveness
-- Use Bootstrap components effectively
-- Build complete, user-friendly web pages
+- Apply CSS for layout, styling, and visual effects
+- Build multi-section, user-friendly web pages
+- Use frameworks like Bootstrap where appropriate
 
-I will continue to improve and expand these projects as my skills develop.
+I will continue to refine and expand these projects as my skills develop.
 
 
 
